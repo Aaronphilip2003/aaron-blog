@@ -20,18 +20,15 @@ export default function Home() {
     <div>
       <div className='flex flex-col gap-6 lg:p-28 p-3 max-w-6xl mx-auto'>
         <h1 className='text-3xl font-bold lg:text-6xl'>Welcome to my Blog!</h1>
-        <p className='text-gray-500 text-lg'>Honestly I don't know where am I taking this blog, I started this as a way to learn web development and set up a blog for a friend. I'll probably end up writing about a few things computer science and engineering related or just documenting my journey as a Computer Science enthusiast. I have a few things that I would love to discuss about. Feel free to reach out on my mail or drop a comment. Thank you for stopping by!</p>
+        <p className='text-gray-500 text-lg'>Hello, world! 🌍✨ I'm Aaron, a software developer with a passion for learning, sharing, and building. 🛠️📚 This blog is my little corner of the internet where I document my journey as a developer, talk about my experiences in the tech world, and explore the fascinating realm of Computer Science. 💻🔍 What started as a side project has grown into a platform where I share insights, and a behind-the-scenes look at my life as a tech enthusiast. 🚀💡 Dive in, explore, and let's build something amazing together! 🌟🎉</p>
       <Link to="/search" className='text-xs sm:text-sm text-teal-500 font-bold hover:underline'>View all Posts</Link>
-      </div>
-      <div className='p-3 dark:bg-slate-700'>
-        <CallToAction/>
       </div>
       <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 py-7'>
         {
           posts && posts.length > 0 && (
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-10">
               <h2 className='text-2xl font-semibold text-center'>Recent Posts</h2>
-              <div className='flex flex-wrap gap-4 '>
+              <div className='flex flex-wrap gap-20'>
                 {
                   posts.map((post) => (
                   <PostCard key={post._id} post={post}/>  
@@ -43,6 +40,9 @@ export default function Home() {
             </div>
           )
         }
+      </div>
+      <div className='p-3 dark:bg-slate-700'>
+        <CallToAction/>
       </div>
     </div>
   )

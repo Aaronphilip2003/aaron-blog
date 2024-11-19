@@ -38,7 +38,7 @@ export default function FooterComponent() {
                     <div>
                         <Footer.Title title='Legal' />
                         <Footer.LinkGroup col>
-                            <Footer.Link href='https://www.google.com' target='_blank' rel='noopener noreferrer'>
+                            <Footer.Link href='/about' target='_blank' rel='noopener noreferrer'>
                                 Privacy Policy
                             </Footer.Link>
                             <Footer.Link href='/about' target='_blank' rel='noopener noreferrer'>
